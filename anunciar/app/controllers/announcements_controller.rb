@@ -1,6 +1,6 @@
 class AnnouncementsController < ApplicationController
   before_action :set_announcement, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_student!
   # GET /announcements
   # GET /announcements.json
   def index

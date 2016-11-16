@@ -18,7 +18,9 @@
 @import "material";
 
 
-
+.mdl-layout__content{
+	text-align: center;
+}
 
 .demo-layout-transparent {
   background: url('backdrop.jpg') center/ cover;

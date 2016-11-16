@@ -1,11 +1,21 @@
 <% title @announcement.title[0..10]+'...' %>
-<p id="notice"><%= notice %></p>
-<%= link_to 'Back', announcements_path %>
+
 <!-- Wide card with share menu button -->
+<style>
+  .demo-card-wide {
+  width: 50%; 
+  margin: 0 auto;
+  margin-top: 50px;
+}
+@media screen and (max-width: 500px) {
+    .demo-card-wide {
+      width: 100%;
 
+    }
+}
+</style>
 
-<div class="demo-card-wide mdl-card mdl-shadow--2dp" style="width: 50%;
-  margin:0 auto;">
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
     <h2 class="mdl-card__title-text"><%= @announcement.title %></h2>
   </div>
@@ -19,7 +29,7 @@
   </div>
   <div class="mdl-card__menu">
     <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-      <i class="material-icons"><%= link_to 'keyboard_arrow_left', announcements_path %></i>
+      <i class="material-icons"><%= link_to 'keyboard_arrow_left', root_path %></i>
     </button>
   </div>
 </div>

@@ -1,11 +1,9 @@
-<p id="notice"><%= notice %></p>
 <% title "Announcements" %>
 <!-- Event card -->
 <div class="mdl-grid">
 <% @announcements.each do |announcement| %>
   <div class="mdl-cell mdl-cell--12-col" >
-    <div class="demo-card-event mdl-card mdl-shadow--16dp" style="width: 50%;
-  margin:0 auto;">
+    <div class="demo-card-event mdl-card mdl-shadow--16dp" >
       <div class="mdl-card__title mdl-card--expand">
         <h4>
           <%=announcement.title %>
