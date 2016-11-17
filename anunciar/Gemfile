@@ -16,6 +16,8 @@ gem 'material_design_lite-rails', '~> 1.2'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+gem "animate-rails"
+gem 'serviceworker-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'rails_admin_rollincode', '~> 1.0'

@@ -16,8 +16,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "material";
-
-
+@import "animate";
+.card{
+	height:81%;
+	width: 92%;
+	position: fixed;
+	top: 10%;
+	left: 1%;
+	right: 1%;
+	margin: 1px auto;
+}
 .mdl-layout__content{
 	text-align: center;
 }

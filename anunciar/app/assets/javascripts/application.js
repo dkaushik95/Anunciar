@@ -17,4 +17,9 @@
 //= require bootstrap-sprockets
 //= require material
 
-
+window.onbeforeunload = confirmExit;
+  function confirmExit()
+  {
+    $("mdl-cell").class("mdl-cell mdl-cell--12-col animated fadeOutDown")
+  }
+//= require serviceworker-companion
