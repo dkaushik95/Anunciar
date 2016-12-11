@@ -1,6 +1,7 @@
 require_relative 'boot'
 ENV['RAILS_ADMIN_THEME'] = 'rollincode'
 require 'rails/all'
+ENV["RAILS_ASSET_ID"] = ''
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "/application.manifest" => Rails::Offline
   devise_for :admins
   devise_for :students
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

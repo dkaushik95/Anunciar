@@ -16,10 +16,10 @@
 //= require_tree .
 //= require bootstrap-sprockets
 //= require material
-
-window.onbeforeunload = confirmExit;
-  function confirmExit()
-  {
-    $("mdl-cell").class("mdl-cell mdl-cell--12-col animated fadeOutDown")
-  }
 //= require serviceworker-companion
+
+$(function(){
+	$(window.applicationCache).bind("error", function(){
+		alert("There was an error when loading the cache manifest.");
+	})
+};)
