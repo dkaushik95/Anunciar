@@ -133,6 +133,9 @@ GEM
       nokogiri (~> 1.6.0)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
     rails_admin (1.0.0)
       builder (~> 3.1)
       coffee-rails (~> 4.0)
@@ -148,6 +151,8 @@ GEM
       sass-rails (>= 4.0, < 6)
     rails_admin_rollincode (1.1)
       rails (>= 4.0, < 6)
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.0.0.1)
       actionpack (= 5.0.0.1)
       activesupport (= 5.0.0.1)
@@ -182,6 +187,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sqlite3 (1.3.12)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
@@ -220,12 +226,14 @@ DEPENDENCIES
   puma (~> 3.0)
   rack-offline
   rails (~> 5.0.0, >= 5.0.0.1)
+  rails_12factor
   rails_admin (~> 1.0)
   rails_admin_rollincode (~> 1.0)
   sass-rails (~> 5.0)
   serviceworker-rails
   spring
   spring-watcher-listen (~> 2.0.0)
+  sqlite3
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
