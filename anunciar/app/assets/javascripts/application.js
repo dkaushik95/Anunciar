@@ -17,9 +17,3 @@
 //= require bootstrap-sprockets
 //= require material
 //= require serviceworker-companion
-
-$(function(){
-	$(window.applicationCache).bind("error", function(){
-		alert("There was an error when loading the cache manifest.");
-	})
-};)
